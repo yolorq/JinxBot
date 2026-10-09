@@ -2,7 +2,7 @@
 
 **Last updated:** October 9, 2026
 
-This Privacy Policy explains how **\[BOT NAME\]** ("the Bot") collects,
+This Privacy Policy explains how **Jinx** ("the Bot") collects,
 uses, stores, and deletes information when it is used on Discord.
 
 By using the Bot, you acknowledge this policy. If you do not agree with
