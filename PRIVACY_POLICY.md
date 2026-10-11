@@ -1,121 +1,164 @@
 # Privacy Policy
 
-**Last updated:** October 9, 2026
+**Last updated: October 11, 2026**
 
-This Privacy Policy explains how **Jinx** ("the Bot") collects,
-uses, stores, and deletes information when it is used on Discord.
+This Privacy Policy explains how **Jinx** (the “Bot”) processes
+information when it is used on Discord. Jinx is an internal Discord bot
+for staff workflow management, including staff statistics, shift
+statistics, punishment statistics, spreadsheet synchronization,
+compensation calculations, and voice-channel attendance checks.
 
-By using the Bot, you acknowledge this policy. If you do not agree with
-it, please do not use the Bot.
+By adding or using the Bot, you acknowledge this Privacy Policy. If you
+do not agree with it, please do not use the Bot.
 
-## 1. Information We May Process
+## 1. Information the Bot Processes
 
-Depending on the features enabled on a Discord server, the Bot may
-process:
+Depending on the command being used, Jinx may process the following
+information:
 
-- Discord user IDs, server IDs, channel IDs, and message IDs needed to
-  respond to commands or perform server features.
-- Usernames, display names, roles, and membership events when required
-  for server management.
-- Message content only when required for a feature, such as processing
-  a command or responding to a message.
-- Presence or activity information only if a feature specifically
-  requires it and the relevant Discord intent is enabled.
-- Bot commands, settings, and limited technical logs needed to
-  operate, troubleshoot, and protect the Bot.
+### Discord identifiers and account information
 
-The Bot does not intentionally request Discord passwords, account login
-credentials, or user access tokens.
+-   Discord user IDs, usernames, display names, usernames/tags, and
+    nicknames;
+-   Discord server (guild) IDs, channel IDs, role IDs, and message IDs;
+-   membership information needed to check whether a user has an
+    authorized role or administrator permission.
 
-**Important:** This list must be updated to match the Bot's actual code
-and configuration. If the Bot does not process a category above, remove
-it. If it processes other information, describe it here.
+### Message and command information
+
+-   The content of a message containing a Bot command, such as a message
+    beginning with `!`;
+-   message timestamps and embeds from the designated appeals channel
+    when the `!azp` workflow calculates aggregate appeal statistics.
+
+The Bot reads message content only to recognize and execute its
+commands. It does not intentionally archive ordinary message content,
+create a searchable message history, or sell message content.
+
+### Voice-channel information
+
+When the `!avs` command is used, the Bot may process the command user's
+current voice channel, the voice channel ID and name, and the Discord
+IDs of human members currently in that channel. This is used to compare
+attendance with members who have a designated staff role.
+
+The Bot does not intentionally process Discord presence or activity
+information.
+
+### Statistics and operational information
+
+The Bot may process staff-related information received from its backend
+API or spreadsheets, including:
+
+-   punishment statistics, such as warnings, mutes, bans, and reprimands;
+-   shift and time statistics, including day and night totals;
+-   spreadsheet values used to calculate staff compensation;
+-   aggregate appeal counts and reviewer names;
+-   command execution results, timestamps, error information, and limited
+    technical logs.
+
+The Bot does not request Discord passwords, authentication credentials,
+or user access tokens.
 
 ## 2. How Information Is Used
 
-Information is used only as needed to:
+Information is used only as necessary to:
 
-- Provide the Bot's features and respond to user commands.
-- Store server or user preferences when a feature requires them.
-- Maintain security, prevent abuse, diagnose errors, and improve
-  reliability.
-- Comply with applicable legal obligations.
+-   recognize and respond to Bot commands;
+-   enforce command access controls based on roles and permissions;
+-   calculate and display staff, punishment, shift, attendance, and
+    compensation statistics;
+-   synchronize punishment and shift statistics with the operator's
+    Google Sheets documents;
+-   send scheduled operational messages to an authorized Discord user;
+-   troubleshoot errors, maintain security, prevent abuse, and keep the
+    Bot functioning;
+-   comply with applicable legal obligations.
 
-The Bot does not sell Discord API Data or use it for advertising.
-Message content is not used to train AI or machine-learning models.
+Jinx does not sell Discord API data, use it for advertising, or use it
+to train artificial-intelligence or machine-learning models.
 
-## 3. Storage and Retention
+## 3. Storage, Services, and Retention
 
-Some information may be stored outside Discord, for example in a
-database or application logs, if required for the Bot's features.
-Information should be retained only for as long as necessary for those
-features, security, or legal obligations, and then deleted or
-anonymized.
+Depending on the workflow, information may be transmitted to or stored
+by the following services:
 
-**Operator note:** Specify the actual hosting/database providers, the
-categories of information stored, and retention periods before
-publishing. If no Discord data is stored off-platform, replace the first
-sentence with an accurate statement that reflects your implementation.
+-   **Google Sheets and Google APIs**, for staff statistics,
+    synchronization data, and compensation-related spreadsheet data;
+-   **The Bot's hosting and logging infrastructure**, for operating the
+    Bot and diagnosing errors.
 
-## 4. Sharing and Third-Party Services
+The Bot's current code does not implement a universal automatic
+deletion schedule. Data may remain in the backend API, Google Sheets,
+or operational logs until it is no longer needed and is deleted by the
+operator or by the relevant service provider. The operator should
+remove or anonymize information when it is no longer required for the
+Bot's operation, security, or legal obligations.
 
-The Bot does not sell personal information or share Discord API Data
-with advertisers or data brokers. Information may be processed by
-hosting, database, or other service providers strictly as necessary to
-operate the Bot. Such providers may process information under their own
-terms and privacy practices.
+The operator should identify the actual hosting provider and any
+additional service providers before publishing this policy. Those
+providers may process information in the countries where they operate.
 
-The Bot may disclose information if required by applicable law or to
-address security incidents, abuse, or protection of rights.
+## 4. Sharing and Disclosure
 
-List any third-party services that receive or process data, such as
-hosting providers, databases, analytics, or logging services: **NONE**.
+Jinx does not sell personal information or share Discord API data with
+advertisers or data brokers.
 
-## 5. Data Deletion and Privacy Requests
+Information may be shared with the services listed in Section 3 only
+when necessary to operate the Bot and provide its features. The
+operator may also disclose information when required by law, to
+respond to valid legal process, or to protect the Bot, its users, or
+others from fraud, abuse, or security incidents.
 
-Users or server administrators may request access to, correction of, or
-deletion of information stored by the Bot by contacting:
+## 5. Your Choices and Privacy Requests
 
-**Contact:** yolorq@proton.me
+Use of the Bot is optional. A user may stop using the Bot, and a server
+administrator may remove it from a server. A user may also avoid
+invoking commands that require the Bot to process their information.
 
-Please include enough information to identify the relevant data, such as
-the Discord user ID or server ID. Do not send passwords, authentication
-tokens, or other login credentials.
+To request access to, correction of, or deletion of information stored
+by the Bot, contact:
 
-Where applicable, the operator will review and respond to requests
-within a reasonable period and delete information that is no longer
-needed, subject to legal requirements and legitimate security needs.
+**Email: yolorq@proton.me**
+
+Please include enough information to identify the relevant data, such
+as the Discord user ID or server ID. Do not send passwords, tokens, or
+other login credentials.
+
+The operator will review privacy requests and delete information that
+is no longer needed, subject to applicable law, legitimate security
+requirements, and information that must be retained by a third-party
+service or for a legal obligation.
 
 ## 6. Data Security
 
-Reasonable technical and organizational measures are used to protect
-information processed by the Bot. However, no method of transmission or
-storage can be guaranteed to be completely secure.
+The operator uses reasonable technical and organizational measures to
+protect information processed by the Bot. These measures include
+restricting access to Bot credentials and service credentials and
+limiting access to the spreadsheets and backend services used by the
+Bot. No method of transmission or storage is completely secure.
 
 ## 7. Children's Privacy
 
-The Bot is not intended to be directed at individuals who are below the
-minimum age required to use Discord in their jurisdiction. The operator
-does not knowingly seek to collect personal information from children in
-violation of applicable law.
+Jinx is not directed to children. Users must meet the minimum age
+requirements applicable to Discord in their jurisdiction. The operator
+does not knowingly seek to collect personal information from children
+in violation of applicable law.
 
 ## 8. Changes to This Policy
 
 This Privacy Policy may be updated when the Bot's features, data
-practices, or legal requirements change. The latest version will be
-published at this page, with the "Last updated" date revised
-accordingly.
+practices, service providers, or legal requirements change. The latest
+version will be published at the same public location, and the
+“Last updated” date will be revised.
 
 ## 9. Contact
 
 For questions or privacy requests, contact:
 
-- **Bot name:** Jinx
-- **Developer/operator:** yolorq
-- **Email or support server:** yolorq@proton.me
+-   **Bot:** Jinx
+-   **Developer/operator:** yolorq
+-   **Email:** yolorq@proton.me
 
----
-
-This policy must accurately reflect the Bot's actual data practices. It
-is a template, not legal advice. Review it before publishing and keep it
-updated as the Bot changes.
+This policy describes the Bot's current intended data practices and is
+not legal advice.
