@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: October 11, 2026**
+**Last updated: October 16, 2026**
 
 This Privacy Policy explains how **Jinx** (the “Bot”) processes
 information when it is used on Discord. Jinx is an internal Discord bot
@@ -18,26 +18,26 @@ information:
 
 ### Discord identifiers and account information
 
--   Discord user IDs, usernames, display names, usernames/tags, and
-    nicknames;
--   Discord server (guild) IDs, channel IDs, role IDs, and message IDs;
--   membership information needed to check whether a user has an
-    authorized role or administrator permission.
+- Discord user IDs, usernames, display names, usernames/tags, and
+  nicknames;
+- Discord server (guild) IDs, channel IDs, and role IDs;
+- membership information needed to check whether a user has an
+  authorized role or administrator permission.
 
-### Message and command information
+### Slash-command information
 
--   The content of a message containing a Bot command, such as a message
-    beginning with `!`;
--   message timestamps and embeds from the designated appeals channel
-    when the `!azp` workflow calculates aggregate appeal statistics.
+- the name of the slash command used by a user;
+- slash-command options, such as the optional reporting week selected
+  for `/areload`;
+- interaction IDs and timestamps needed to respond to commands.
 
-The Bot reads message content only to recognize and execute its
-commands. It does not intentionally archive ordinary message content,
-create a searchable message history, or sell message content.
+The Bot does not read ordinary Discord message content. It does not
+intentionally archive a searchable message history or sell message
+content.
 
 ### Voice-channel information
 
-When the `!avs` command is used, the Bot may process the command user's
+When the `/avs` command is used, the Bot may process the command user's
 current voice channel, the voice channel ID and name, and the Discord
 IDs of human members currently in that channel. This is used to compare
 attendance with members who have a designated staff role.
@@ -50,12 +50,11 @@ information.
 The Bot may process staff-related information received from its backend
 API or spreadsheets, including:
 
--   punishment statistics, such as warnings, mutes, bans, and reprimands;
--   shift and time statistics, including day and night totals;
--   spreadsheet values used to calculate staff compensation;
--   aggregate appeal counts and reviewer names;
--   command execution results, timestamps, error information, and limited
-    technical logs.
+- punishment statistics, such as warnings, mutes, bans, and reprimands;
+- shift and time statistics, including day and night totals;
+- spreadsheet values used to calculate staff compensation;
+- command execution results, timestamps, error information, and limited
+  technical logs.
 
 The Bot does not request Discord passwords, authentication credentials,
 or user access tokens.
@@ -64,16 +63,16 @@ or user access tokens.
 
 Information is used only as necessary to:
 
--   recognize and respond to Bot commands;
--   enforce command access controls based on roles and permissions;
--   calculate and display staff, punishment, shift, attendance, and
-    compensation statistics;
--   synchronize punishment and shift statistics with the operator's
-    Google Sheets documents;
--   send scheduled operational messages to an authorized Discord user;
--   troubleshoot errors, maintain security, prevent abuse, and keep the
-    Bot functioning;
--   comply with applicable legal obligations.
+- recognize and respond to slash commands;
+- enforce command access controls based on roles and permissions;
+- calculate and display staff, punishment, shift, attendance, and
+  compensation statistics;
+- synchronize punishment and shift statistics with the operator's
+  Google Sheets documents;
+- send scheduled operational messages to an authorized Discord user;
+- troubleshoot errors, maintain security, prevent abuse, and keep the
+  Bot functioning;
+- comply with applicable legal obligations.
 
 Jinx does not sell Discord API data, use it for advertising, or use it
 to train artificial-intelligence or machine-learning models.
@@ -83,10 +82,12 @@ to train artificial-intelligence or machine-learning models.
 Depending on the workflow, information may be transmitted to or stored
 by the following services:
 
--   **Google Sheets and Google APIs**, for staff statistics,
-    synchronization data, and compensation-related spreadsheet data;
--   **The Bot's hosting and logging infrastructure**, for operating the
-    Bot and diagnosing errors.
+- **The Bot's backend API**, configured through the deployment
+  environment, for staff punishment and shift statistics;
+- **Google Sheets and Google APIs**, for staff statistics,
+  synchronization data, and compensation-related spreadsheet data;
+- **The Bot's hosting and logging infrastructure**, for operating the
+  Bot and diagnosing errors.
 
 The Bot's current code does not implement a universal automatic
 deletion schedule. Data may remain in the backend API, Google Sheets,
@@ -156,9 +157,9 @@ version will be published at the same public location, and the
 
 For questions or privacy requests, contact:
 
--   **Bot:** Jinx
--   **Developer/operator:** yolorq
--   **Email:** yolorq@proton.me
+- **Bot:** Jinx
+- **Developer/operator:** yolorq
+- **Email:** yolorq@proton.me
 
 This policy describes the Bot's current intended data practices and is
 not legal advice.
